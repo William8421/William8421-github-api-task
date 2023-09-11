@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.dark {
+  background-color: #333333;
+}
+.dark h2,
+.dark h4,
+.dark .theme-toggler, .dark .arrow-up-icon {
+  color: white !important;
+}
+
+.home {
+  gap: 2rem;
+  font-family: Calibri, Helvetica, Arial, sans-serif;
+  margin-bottom: 3rem;
+}
+.home .theme-button-container {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  gap: 1rem;
+  padding-right: 0.5rem;
+}
+.home .theme-button-container h4 {
+  color: #09426a;
+}
+.home .theme-button-container .theme-button {
+  background-color: transparent;
+  border: none;
+}
+.home .theme-button-container .theme-button .theme-toggler {
+  font-size: 2rem;
+  color: #09426a;
+}
+.home h2 {
+  color: #09426a;
+}
+.home .logo-search-container .github-logo {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+.home .logo-search-container .search-bar-container {
+  gap: 1rem;
+}
+.home .logo-search-container .search-bar-container .search-bar {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+.home .logo-search-container .search-bar-container .search-bar input,
+.home .logo-search-container .search-bar-container .search-bar button {
+  height: 3rem;
+  width: 3rem;
+  border-style: none;
+  font-size: 1rem;
+  border-radius: 50%;
+  background-color: #09426a;
+  color: black;
+}
+.home .logo-search-container .search-bar-container .search-bar input {
+  letter-spacing: 0.15rem;
+  outline: none;
+  border: none;
+  transition: all 500ms ease-in-out;
+  padding-left: 1.2rem;
+}
+.home .logo-search-container .search-bar-container .search-bar input::placeholder {
+  color: rgba(83, 76, 76, 0.5);
+  font-weight: 100;
+}
+.home .logo-search-container .search-bar-container .search-bar .input-open {
+  width: 14rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  border: solid 1px #09426a;
+}
+.home .logo-search-container .search-bar-container .search-bar .input-open:focus {
+  background-color: white;
+  border-radius: 1.5rem;
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+.home .logo-search-container .search-bar-container .search-bar button {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.home .more-info-container {
+  margin: 2rem;
+  text-align: center;
+  color: #09426a;
+}
+.home .more-info-container .more-info-button {
+  background-color: transparent;
+  border: none;
+  margin: 2rem;
+}
+.home .more-info-container .more-info-button .arrow-icon {
+  display: block;
+  color: #09426a;
+  font-size: 3rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.home,
+.search-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user {
+  width: 100%;
+}
+.user .user-info-container {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user .user-info-container .user-info-sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+}
+.user .user-info-container .user-info-sub-container img {
+  border-radius: 50%;
+  width: 50%;
+}
+.user .user-info-container .user-info-sub-container .empty-div-user {
+  width: 100%;
+  height: 12rem;
+  background-color: #09426a;
+  border-radius: 1rem;
+  position: relative;
+}
+.user .user-info-container .user-info-sub-container .empty-div-user .user-information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1fa4ac;
+  color: white;
+  border-radius: 1rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.user .user-info-container .user-info-sub-container div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.user .user-info-container .user-info-sub-container div h4 {
+  text-decoration-line: underline;
+}
+.user .user-info-container .user-info-sub-container div span {
+  text-decoration-line: underline;
+}
+.user .user-info-container .user-info-sub-container div a {
+  text-decoration: none;
+}
+.user .error {
+  color: red;
+}
+
+.repos {
+  width: 100%;
+}
+.repos .repos-info-container {
+  text-align: center;
+}
+.repos .repos-info-container .repos-info-sub-container {
+  margin-top: 2rem;
+}
+.repos .repos-info-container .repos-info-sub-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.repos .repos-info-container .repos-info-sub-container ul li {
+  width: 80%;
+  list-style: none;
+  margin: 0 1rem 0 1rem;
+}
+.repos .repos-info-container .repos-info-sub-container ul li .empty-div-repos,
+.repos .repos-info-container .repos-info-sub-container ul li .second-empty-div-repos,
+.repos .repos-info-container .repos-info-sub-container ul li .repos-info {
+  width: 100%;
+  height: 12rem;
+  border-radius: 1rem;
+}
+.repos .repos-info-container .repos-info-sub-container ul li .empty-div-repos {
+  background-color: #09426a;
+  position: relative;
+}
+.repos .repos-info-container .repos-info-sub-container ul li .empty-div-repos .second-empty-div-repos {
+  background-color: #1fa4ac;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.repos .repos-info-container .repos-info-sub-container ul li .empty-div-repos .repos-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #8accd8;
+  color: #09426a;
+  overflow: auto;
+  padding: 1rem;
+  margin: 1rem 0 2rem 0;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+.repos .repos-info-container .repos-info-sub-container ul li .empty-div-repos .repos-info div {
+  display: flex;
+  justify-content: space-between;
+}
+.repos .repos-info-container .repos-info-sub-container ul li .empty-div-repos .repos-info div h4 {
+  text-decoration-line: underline;
+}
+.repos .repos-info-container .repos-info-sub-container ul li .empty-div-repos .repos-info div span {
+  font-weight: 400;
+  text-align: left;
+  width: 50%;
+}
+.repos .back-to-top-button {
+  background-color: transparent;
+  border: none;
+}
+.repos .back-to-top-button .arrow-up-icon {
+  color: #09426a;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .home {
+    position: relative;
+    align-items: flex-end;
+  }
+  .home .logo-search-container {
+    width: 100%;
+    display: flex;
+  }
+  .home .logo-search-container .github-logo {
+    width: 50%;
+  }
+  .home .logo-search-container .search-bar-container {
+    width: 50%;
+    justify-content: center;
+  }
+  .home .more-info-container {
+    align-self: center;
+  }
+  .home .user .user-info-container .user-info-sub-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .home .user .user-info-container .user-info-sub-container img {
+    width: 25%;
+  }
+  .home .user .user-info-container .user-info-sub-container .empty-div-user {
+    width: 40%;
+  }
+  .home .repos .repos-info-container {
+    text-align: center;
+  }
+  .home .repos .repos-info-container .repos-info-sub-container ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .home .repos .repos-info-container .repos-info-sub-container ul li {
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .home .repos .repos-info-container .repos-info-sub-container ul li {
+    width: 25%;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

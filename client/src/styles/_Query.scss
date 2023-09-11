@@ -1,0 +1,85 @@
+@media (min-width: 768px) {
+  .home {
+    position: relative;
+    align-items: flex-end;
+    .logo-search-container {
+      width: 100%;
+      display: flex;
+      .github-logo {
+        width: 50%;
+      }
+      .search-bar-container {
+        width: 50%;
+        justify-content: center;
+      }
+    }
+    .more-info-container {
+      align-self: center;
+    }
+    .user{
+      .user-info-container {
+        .user-info-sub-container {
+          flex-direction: row;
+          justify-content: space-around;
+          img {
+            width: 25%;
+          }
+          .empty-div-user {
+            width: 40%;
+          }
+        }
+        
+      }
+    }
+    .repos{
+      .repos-info-container {
+        text-align: center;
+        .repos-info-sub-container {
+          ul {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            li {
+              width: 40%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .home {
+    .user{
+      
+    }
+    .repos{
+      .repos-info-container {
+        .repos-info-sub-container {
+          ul {
+            li {}
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .home {
+    .user{
+
+    }
+    .repos{
+      .repos-info-container {
+        .repos-info-sub-container {
+          ul {
+            li {
+              width: 25%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

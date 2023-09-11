@@ -1,0 +1,19 @@
+$DARK_BLUE: #09426a;
+$LIGHT_BLUE: #1fa4ac;
+$LIGHTER_BLUE: #8accd8;
+$LIGHT: white;
+$DARK: black;
+
+
+@mixin RADIUS_16 {
+    border-radius: 1rem;
+}
+@mixin RADIUS_50 {
+    border-radius: 50%;
+}
+
+@mixin FLEX_COLUMN_CENTER {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

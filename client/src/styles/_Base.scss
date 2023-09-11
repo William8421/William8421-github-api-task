@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.dark {
+  background-color: #333333;
+  h2,
+  h4,
+  .theme-toggler, .arrow-up-icon {
+    color: $LIGHT !important;
+  }
+}

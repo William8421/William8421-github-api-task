@@ -35,7 +35,7 @@ export default function ReposComponent() {
                        <h4>Repository name:</h4>
                        <span>
                          <a
-                           href={userData.html_url}
+                           href={repo.html_url}
                            target="_blank"
                            rel="noreferrer"
                          >

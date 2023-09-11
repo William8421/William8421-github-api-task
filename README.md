@@ -9,7 +9,7 @@
 ### Installation
 
 1. Klonen Sie das Repository: `git clone git@github.com:William8421/github-api-task.git`
-2. Wechseln Sie zum Projektverzeichnis: `cd github-api-task`
+2. Wechseln Sie zum Projektverzeichnis: `cd github-api-task/client`
 3. Installieren Sie dependencies: `npm install` oder `yarn install`
 
 ## Ausführen der Anwendung
@@ -49,7 +49,7 @@ Die App wurde mobil-first entwickelt und ist vollständig responsiv auf Mobilger
 ### Installation
 
 1. Clone the repository: `git clone git@github.com:William8421/github-api-task.git`
-2. Change to the project directory: `cd github-api-task`
+2. Change to the project directory: `cd github-api-task/client`
 3. Install dependencies: `npm install` or `yarn install`
 
 ## Running the Application
